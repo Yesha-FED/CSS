@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip</title>
+    <style>
+        div{
+            height: 500px;
+            margin: 10px 0px;
+        }
+        .background-clip{
+            border: 10px dashed blue;
+            background-image: url(../../Images/backgroundimage.jpg);
+            /* background-clip: border-box; */
+            background-clip: content-box;
+            /* background-clip: padding-box; */
+            padding: 100px;
+       }
+    </style>
+</head>
+<body>
+    <h1>Background Clip</h1>
+    <hr>
+    <div class="background-clip">background-clip</div>
+</body>
+</html>
