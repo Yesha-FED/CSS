@@ -13,11 +13,23 @@
             border: 10px dashed blue;
             background-image: url(../../Images/backgroundimage.jpg);
             background-repeat: no-repeat;
-            /* background-repeat: repeat; */
-            /* background-origin: border-box; */
             background-origin: content-box;
             padding: 100px;
-            /* background-origin: padding-box; */
+            /* box-sizing: content-box; */
+        }
+        .border-box{
+            border: 10px dashed blue;
+            background-image: url(../../Images/backgroundimage.jpg);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            padding: 100px;
+        }
+        .padding-box{
+            border: 10px dashed blue;
+            background-image: url(../../Images/backgroundimage.jpg);
+            background-repeat: no-repeat;
+            background-origin: padding-box;
+            padding: 100px;
         }
     </style>
 </head>
@@ -25,5 +37,9 @@
     <h1>Background Origin</h1>
     <hr>
     <div class="background-origin">background-origin</div>
+    <hr>
+    <div class="border-box">border-box</div>
+    <hr>
+    <div class="padding-box">padding-box</div>
 </body>
 </html>

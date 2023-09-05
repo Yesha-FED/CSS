@@ -12,10 +12,21 @@
         .background-clip{
             border: 10px dashed blue;
             background-image: url(../../Images/backgroundimage.jpg);
-            /* background-clip: border-box; */
-            background-clip: content-box;
-            /* background-clip: padding-box; */
+            background-clip: padding-box;
             padding: 100px;
+       }
+       .border-box{
+        border: 10px dashed blue;
+        background-image: url(../../Images/backgroundimage.jpg);
+        background-clip: border-box;
+        background-repeat: no-repeat;
+       }
+       .content-box{
+        border: 10px dashed blue;
+        background-image: url(../../Images/backgroundimage.jpg);
+        background-clip: padding-box;
+        padding: 100px;
+        background-repeat: no-repeat;
        }
     </style>
 </head>
@@ -23,5 +34,9 @@
     <h1>Background Clip</h1>
     <hr>
     <div class="background-clip">background-clip</div>
+    <hr>
+    <div class="border-box">border-box</div>
+    <hr>
+    <div class="content-box">content-box</div>
 </body>
 </html>
