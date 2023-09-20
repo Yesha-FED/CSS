@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Flex</title>
+    <style>
+        .y{
+            display: flex;
+            border: 2px dashed black;
+        }
+        div[class*="box"]{
+            width: 70px;
+            height: 50px;
+            border: 2px solid blue;
+            margin: 5px;
+            background-color: chartreuse;
+        }
+    </style>
 </head>
 <body>
     <div class="y">
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-        <h2>Hello</h2>
-    </div>
-    <div class="s">
-        <div class="row">
-            <div class="col-50"><img src="../../Images/Image.jpg" alt=""></div>
-            <div class="col-50">Lorem</div>
-            <div class="row">
-                <div class="col-25"><img src="../../Images/Image.jpg" alt=""></div>
-                <div class="col-25">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, minus?</div>
-            </div>
-        </div>
+        <div class="box-1">box-1</div>
+        <div class="box-2">box-2</div>
+        <div class="box-3">box-3</div>
+        <div class="box-4">box-4</div>
     </div>
 </body>
 </html>
