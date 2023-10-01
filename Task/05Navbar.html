@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: crimson;
+        }
+        nav {
+            background-color: cyan;
+            color: black;
+            border: 5px solid rgb(9, 224, 20);
+            display: flex;
+            padding: 15px;
+        }
+        li {
+            display: inline;
+            font-size: xx-large;
+            padding: 25px;
+            list-style: none;
+            margin: 60px;
+        }
+        .checkbox{
+            margin-left: 20px;
+        }
+        .s{
+            display: none
+        }
+        input[type="checkbox"]{
+            margin: 25px;
+            width: 30px;
+            height: 20px;
+        }
+
+        @media (max-width: 575.98px) {
+            .nav{
+                display: flex;
+                flex-direction: column;
+                width: 570px;
+                height: 600px;
+                background-color: cyan;
+            }
+            .bar {
+                font-size: 40px;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+            #q{
+                width: 25px;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                opacity: 10;
+            }
+            li {
+                padding-top: 2px;
+                display: none;
+            }
+            .s{
+                display: block;
+                margin-right: 20px;
+            }
+            .bar{
+           font-size: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="y">
+        <ul>
+            <li><img src="../Images/logo.jpg" alt="" height="100px" width="100px"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="s">
+        <input type="checkbox" name="" id="q">
+        <label for="q">
+            <i class="fa-solid fa-bars bar"></i>
+        </label>
+    </div>
+</body>
+
+</html>
