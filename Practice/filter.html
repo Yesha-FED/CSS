@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter In CSS</title>
+    <style>
+        h1{
+            text-align: center;
+            color: black;
+            border: 4px solid black;
+            background-color: rgb(243, 126, 126);
+        }
+        div{
+            /* height: 100vh; */
+            height: 50vh;
+            width: 50%;
+        }
+        .d{
+            background: url(../Images/backgroundimage.jpg) no-repeat center center/cover;
+            filter: blur(4px);
+        }
+        .i{
+            background: url(../Images/Image.jpg) no-repeat center center/cover;
+            filter: brightness(0.7);
+        }
+        .s{
+            background: url(../Images/images.jpg) no-repeat center center/cover;
+            filter: contrast(200%);
+        }
+        .h{
+            background: url(../Images/birdimage.jpg) no-repeat center center/cover;
+            filter: drop-shadow(16px 16PX 20px green);
+        }
+        .v{
+            background: url(../Images/mustangh800.webp) no-repeat center center/cover;
+            filter: grayscale(70%);
+        }
+        .y{
+            background: url(../Images/img.webp) no-repeat center center/cover;
+            filter: hue-rotate(50deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Filter In CSS</h1>
+    <div class="d"></div>
+    <hr>
+    <div class="i"></div> <hr>
+    <div class="s"></div> <hr>
+    <div class="h"></div> <hr>
+    <div class="v"></div> <hr>
+    <div class="y"></div> <hr>
+</body>
+</html>
